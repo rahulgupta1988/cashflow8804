@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="47dp"
+            android:adjustViewBounds="false"
+            app:backgroundTint="#908129"
+            android:src="@android:drawable/ic_dialog_dialer" />-->
+
+    <LinearLayout
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight=".2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#343552"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_weight=".1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="0dp">
+
+                <TextView
+                    android:id="@+id/withusername"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Money Planner"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#222439"
+                    />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_weight=".9"
+                android:id="@+id/catlist"
+                android:layout_width="match_parent"
+
+                android:layout_height="0dp">
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight=".8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:weightSum="1">
+
+
+            <LinearLayout
+                android:id="@+id/headerlay"
+                android:layout_weight=".1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="#99800b"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/headertitle"
+                    android:layout_weight=".35"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Income - Transaction"
+                    android:textSize="12sp"
+                    android:gravity="center_vertical"
+                    android:textColor="#ffffff"
+                    android:paddingLeft="10dp"
+                    />
+
+                <Spinner
+                    android:id="@+id/sourcespin"
+                    android:layout_weight=".0"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/select_income_type_3x"
+                    android:layout_gravity="center"
+                    android:visibility="invisible"
+                    ></Spinner>
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_weight=".65"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="10dp"
+                    android:weightSum="1.2">
+
+
+                <!--    <Button
+                        android:id="@+id/addmoreitems"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:background="@drawable/viewaddeditemripple"
+                        android:text="ADD NEW ITEM"
+                        android:textColor="#ffffff"
+                        android:textSize="10sp"
+                        android:layout_marginRight="5dp"
+                        />
+-->
+
+
+                    <cashflow.sixdcash.com.cashflow.Utility.CircularImageView
+                        android:id="@+id/usersetting"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/user_3x"
+                        android:layout_gravity="center"
+                        />
+
+                    <ImageView
+                        android:id="@+id/homeicon"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/home_icon"
+                        android:layout_gravity="center"
+                        android:visibility="visible"
+                        />
+
+                    <ImageView
+                        android:id="@+id/addmoreitems"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/add_menu_3x"
+                        android:layout_gravity="center"
+                        android:visibility="visible"
+                        />
+
+                    <ImageView
+                        android:id="@+id/submitMenuButton"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/ok_menu_3x"
+                        android:layout_gravity="center"
+                        android:visibility="gone"
+                        />
+
+                    <ImageView
+                        android:id="@+id/helpicon"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/help"
+                        android:layout_gravity="center"
+
+                        />
+
+
+                    <ImageView
+                        android:id="@+id/reseticon"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/reset_icon"
+                        android:layout_gravity="center"
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/settingicon"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/setting_3x"
+                        android:layout_gravity="center"
+
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_weight=".9"
+                android:id="@+id/container"
+                android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="start"
+                android:visibility="visible"
+                android:background="#EFEFEF">
+            </FrameLayout>
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
+

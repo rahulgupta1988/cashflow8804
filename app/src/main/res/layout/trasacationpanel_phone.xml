@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEAEF">
+
+    <include
+        android:id="@+id/headertilelay"
+        layout="@layout/trasactionpanelcolumnbar_phone"
+        android:visibility="gone"/>
+
+
+    <LinearLayout
+        android:weightSum="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_weight=".88"
+            android:id="@+id/trasactionlist"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"></android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:layout_weight=".88"
+            android:id="@+id/empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="Transaction Not Available" />
+
+
+        <LinearLayout
+            android:layout_weight=".12"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="left|center_vertical"
+            android:gravity="center_vertical"
+            android:background="#424459">
+            <Button
+                android:id="@+id/addmoreitems"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:background="@drawable/viewaddeditemripple"
+                android:text="ADD NEW ITEM"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:textSize="12dp"
+                android:visibility="gone"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#3C3D50"
+                android:id="@+id/copyRightLL">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:gravity="right"
+                    android:id="@+id/copyRightTV"
+                    android:textSize="10dp"
+                    android:text="copyRightTV"
+                    android:layout_alignParentRight="true"
+                    android:paddingTop="5dp"
+                    android:paddingRight="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:textColor="@color/white"
+                    android:id="@+id/hyperLinkTV"
+                    android:textSize="10dp"
+                    android:text="hyperLinkTV"
+                    android:layout_gravity="left"
+                    android:layout_alignParentLeft="true"
+                    android:paddingTop="5dp"
+                    android:paddingLeft="10dp"
+                    />
+            </RelativeLayout>
+            </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

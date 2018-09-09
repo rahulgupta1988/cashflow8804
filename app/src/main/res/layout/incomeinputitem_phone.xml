@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/touchlay"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginLeft="7dp">
+        <LinearLayout
+            android:id="@+id/maininputlay"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:weightSum="1">
+
+            <Spinner
+                android:id="@+id/sourcespin"
+                android:layout_weight=".23"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/select_income_type_3x"
+                android:layout_marginRight="7dp"
+                android:fadeScrollbars="false"></Spinner>
+
+            <Spinner
+                android:id="@+id/howoften"
+                android:layout_weight=".24"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/how_often_3x"
+                android:layout_marginRight="7dp"
+                android:fadeScrollbars="false"></Spinner>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_weight=".14"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:weightSum="1"
+                android:layout_gravity="center_vertical|right"
+                android:gravity="center_vertical|right"
+                android:paddingRight="10dp"
+                android:layout_marginRight="7dp"
+                android:background="@drawable/rectangularshap1">
+
+
+                <TextView
+                    android:id="@+id/poundsym"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="14sp"
+                    android:textColor="#000000"
+                    android:gravity="center_vertical"
+                    android:visibility="gone"
+                    android:paddingRight="2dp"
+                    android:text="£"/>
+
+
+                <EditText
+                    android:id="@+id/howmuchpound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="14sp"
+                    android:hint="Amount?"
+                    android:textColorHint="#000000"
+                    android:textColor="#000000"
+                    android:fontFamily="sans-serif-condensed"
+                    android:background="#00000000"
+                    android:inputType="numberDecimal"
+                    android:text=""
+                    />
+
+                <TextView
+                    android:id="@+id/pencesym"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="14sp"
+                    android:textColor="#000000"
+                    android:gravity="center_vertical"
+                    android:visibility="gone"
+                    android:paddingLeft="2dp"
+                    android:text="p"/>
+
+
+                <LinearLayout
+                    android:layout_weight=".01"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="#E86C41"
+                    android:visibility="gone"
+                    />
+                <TextView
+                    android:id="@+id/howmuchpence"
+                    android:layout_weight=".495"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:hint="Pence?"
+                    android:textSize="14sp"
+                    android:paddingRight="5dp"
+                    android:textColorHint="#000000"
+                    android:textColor="#000000"
+                    android:gravity="center_vertical|right"
+                    android:fontFamily="sans-serif-condensed"
+                    android:visibility="gone"
+                    />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/nextdate"
+                android:layout_weight=".18"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="7dp"
+                android:background="@drawable/input_3x"
+                android:hint="Next Date"
+                android:textSize="14sp"
+                android:paddingLeft="5dp"
+                android:textColorHint="#000000"
+                android:textColor="#000000"
+                android:gravity="center_vertical"
+                android:fontFamily="sans-serif-condensed"
+                />
+
+
+
+            <LinearLayout
+                android:id="@+id/selcomment"
+                android:orientation="horizontal"
+                android:layout_weight=".05"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/edit_3x"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/deleticon"
+                android:orientation="horizontal"
+                android:layout_weight=".05"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/trash_new"
+                    />
+
+            </LinearLayout>
+
+            <Button
+                android:layout_weight=".12"
+                android:id="@+id/savebtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Save"
+                android:layout_gravity="center"
+                android:visibility="visible"
+                android:background="#F15150"
+                android:textColor="#ffffff"
+                android:textAllCaps="false"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_weight=".05"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_margin="7dp"
+                android:visibility="gone"
+                >
+                <ImageView
+                    android:id="@+id/infoimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/info_3x"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/commentlay"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:background="#ebebeb"
+            android:visibility="gone">
+            <TextView
+                android:id="@+id/commenttxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:padding="2dp"
+                android:textColor="#000000"
+                android:text=""
+                android:fontFamily="sans-serif-condensed"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ffffff"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/deleteview"
+        android:orientation="horizontal"
+
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center"
+
+        android:visibility="gone"
+        android:background="#E76C41"
+        android:layout_gravity="right"
+        android:layout_marginTop="7dp">
+        <ImageView
+            android:id="@+id/trash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/trash"
+            android:padding="5dp"
+            />
+
+        <ImageView
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cancel"
+            android:padding="5dp"
+            />
+    </LinearLayout>
+</FrameLayout>

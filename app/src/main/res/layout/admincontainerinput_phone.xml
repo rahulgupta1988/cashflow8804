@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/touchlay"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/maininputlay"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight=".4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Another Source"
+                android:textSize="12sp"
+                android:textColor="#424459"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                />
+
+
+            <EditText
+                android:id="@+id/sourcfromedit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Enter source name"
+                android:padding="5dp"
+                android:gravity="top"
+                android:background="@drawable/rectangularshap1"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+
+            <Button
+                android:id="@+id/addbtn"
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:text="Add"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/addcommentbtntripple"
+                android:textColor="#ffffff"
+                />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#301911"
+            android:layout_marginLeft="20dp"/>
+
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight=".6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Source"
+                android:textSize="12sp"
+                android:textColor="#424459"
+                android:padding="10dp"
+                android:textStyle="bold"
+                />
+
+            <ListView
+                android:id="@+id/slelctedincomesouceslist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fadeScrollbars="false"
+                android:scrollbarStyle="outsideInset"></ListView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

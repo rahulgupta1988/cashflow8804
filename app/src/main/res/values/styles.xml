@@ -1,0 +1,42 @@
+<resources>
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">#706b6d</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+
+    <style name="AppTheme" parent="AppTheme.Base"></style>
+
+
+
+    <style name="animationName" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/slide_down</item>
+        <item name="android:windowExitAnimation">@anim/slide_up</item>
+    </style>
+
+
+
+    <style name="tallerBarStyle" parent="@android:style/Widget.SeekBar">
+        <item name="android:progressDrawable">@drawable/apptheme_scrubber_progress_horizontal_holo_light</item>
+        <item name="android:background">#00000000</item>
+        <item name="android:thumb">@drawable/apptheme_scrubber_control_selector_holo_light</item>
+
+    </style>
+
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/buttomtotop</item>
+        <item name="android:windowExitAnimation">@anim/buttomtotopback</item>
+    </style>
+
+    <style name="SelPhotoDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/selpohotfrow</item>
+        <item name="android:windowExitAnimation">@anim/selphotdown</item>
+    </style>
+
+
+</resources>

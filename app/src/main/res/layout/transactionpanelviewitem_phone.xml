@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentlay"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="39.5dp"
+        android:weightSum="0.8">
+
+        <TextView
+            android:layout_weight=".05"
+            android:id="@+id/sn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="1"
+            android:gravity="center"
+            android:textSize="12dp"
+            />
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#979797"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            />
+
+
+        <TextView
+            android:layout_weight=".2"
+            android:id="@+id/catname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="catName"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:visibility="gone"
+            android:textSize="10dp"
+            />
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#979797"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:visibility="gone"
+            />
+
+
+
+        <TextView
+            android:layout_weight=".15"
+            android:id="@+id/sourcename"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="sourceName"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:textSize="12dp"
+            />
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#979797"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            />
+
+
+
+
+        <FrameLayout
+            android:id="@+id/howoftenLay"
+            android:layout_weight=".12"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/howoften"
+                android:text="howoften"
+                android:layout_gravity="center"
+                android:visibility="visible"
+                android:paddingLeft="4dp"
+                android:textSize="12dp"
+                />
+
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/edit_3x"
+                android:layout_gravity="right|top"
+                />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#979797"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            />
+
+        <FrameLayout
+            android:id="@+id/poundslay"
+            android:layout_weight=".1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <!--  <EditText
+                  android:id="@+id/pounds"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:text="Pounds"
+                  android:layout_gravity="center_vertical"
+                  android:paddingLeft="10dp"
+                  android:background="#00000000"
+                  android:inputType="numberDecimal"
+                  />-->
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical|right"
+                android:gravity="center_vertical|right"
+                >
+
+
+                <TextView
+                    android:id="@+id/poundsym"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="#000000"
+                    android:gravity="center_vertical"
+                    android:visibility="visible"
+                    android:paddingRight="1dp"
+                    android:text="£"
+                    android:textSize="12dp"/>
+
+                <EditText
+                    android:id="@+id/pounds"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Pounds"
+                    android:gravity="center_vertical"
+                    android:background="#00000000"
+                    android:inputType="numberDecimal"
+                    android:textSize="10sp"
+                    />
+
+                <TextView
+                    android:id="@+id/pencesym"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="10sp"
+                    android:textColor="#000000"
+                    android:gravity="center_vertical"
+                    android:visibility="gone"
+                    android:paddingLeft="1dp"
+                    android:text="p"
+                    />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/edit_3x"
+                android:layout_gravity="right|top"
+                />
+        </FrameLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#979797"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            />
+
+        <FrameLayout
+            android:id="@+id/datelay"
+            android:layout_weight=".12"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Date"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:padding="1dp"
+                android:textSize="12dp"
+                />
+
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/edit_3x"
+                android:layout_gravity="right|top"
+                />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#979797"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            />
+
+        <FrameLayout
+            android:layout_weight=".12"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <EditText
+                android:id="@+id/comment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Comment"
+                android:layout_gravity="center_vertical"
+                android:background="#00000000"
+                android:paddingLeft="5dp"
+                android:textSize="12dp"
+                android:maxLength="20"
+                />
+
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/edit_3x"
+                android:layout_gravity="right|top"
+                />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#979797"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            />
+
+        <ImageView
+            android:layout_weight=".03"
+            android:id="@+id/deletebtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="3dp"
+            android:src="@drawable/trash_new"
+            />
+        <Button
+            android:layout_weight=".1"
+            android:id="@+id/confbtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:layout_gravity="center"
+            android:layout_margin="4dp"
+            android:textSize="10dp"
+            android:visibility="visible"
+            android:textAllCaps="false"
+            android:background="#F15150"
+            android:textColor="#ffffff"
+            />
+
+
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hintsAndTips"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:visibility="gone"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"/>
+
+</LinearLayout>

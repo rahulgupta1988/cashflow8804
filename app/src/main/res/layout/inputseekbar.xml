@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/number_inpu_frame_3x"
+    android:weightSum="1">
+    <LinearLayout
+        android:layout_weight=".20"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+    <LinearLayout
+        android:layout_weight=".80"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\u00A3 0"
+            android:textColor="#ffffff"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+
+        <SeekBar
+            style="@style/tallerBarStyle"
+            android:layout_weight=".9"
+            android:id="@+id/seek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:max="100"/>
+
+        <TextView
+            android:id="@+id/maxval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\u00A3 500"
+            android:textColor="#ffffff"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingRight="2dp" />
+
+    </LinearLayout>
+</LinearLayout>

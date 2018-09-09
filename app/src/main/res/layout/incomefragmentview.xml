@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:id="@+id/parent_lay"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_marginRight="5dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fadeScrollbars="false">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/trasactionlistview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="7dp"></LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/incomeinputview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></LinearLayout>
+
+            <Button
+                android:id="@+id/addmore"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/morebutdrable"
+                android:layout_margin="10dp"
+                android:visibility="gone"
+                />
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:background="@drawable/buttonstatesel"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:gravity="center"
+                 android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textAllCaps="false"
+                android:visibility="gone"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight=".15"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginRight="20dp"
+        android:visibility="gone">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="left|center_vertical">
+
+
+            <Button
+                android:id="@+id/trasctionbtn"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/viewaddeditemripple"
+                android:text="View added items"
+                android:textColor="#ffffff"
+                android:visibility="gone"
+                />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">My Money Planner</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="eula_string">eula</string>
+    <string name="accept">ACCEPT</string>
+
+    <string-array name="catarray">
+        <item>Start</item>
+        <item>My Income</item>
+        <item>The Basics</item>
+        <item>Keeping Mobile</item>
+        <item>Clothes and Stuff</item>
+        <item>Entertainment</item>
+        <item>Repayments</item>
+        <item>Major Buys</item>
+        <item>My Year</item>
+
+
+    </string-array>
+
+    <string-array name="incomesource">
+        <item>Select Income type</item>
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+    </string-array>
+
+    <string-array name="how_often">
+        <item>Day</item>
+        <item>Week</item>
+        <item>Month</item>
+        <item>Quarter</item>
+        <item>Half Year</item>
+        <item>Year</item>
+    </string-array>
+
+
+
+
+</resources>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentlay"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:padding="10dp"
+        android:weightSum="0.55">
+
+        <TextView
+            android:layout_weight=".02"
+            android:id="@+id/sn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="1"
+            android:gravity="center"
+            />
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#979797"
+
+            />
+
+
+        <TextView
+            android:layout_weight=".2"
+            android:id="@+id/catname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="catName"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:visibility="gone"
+            />
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#979797"
+            android:visibility="gone"
+            />
+
+
+
+        <TextView
+            android:layout_weight=".10"
+            android:id="@+id/sourcename"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="sourceName"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="10dp"
+            />
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#979797"
+            />
+
+        <TextView
+            android:layout_weight=".08"
+            android:id="@+id/frequency"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Frequency"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:visibility="visible"
+            />
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#979797"
+            />
+
+        <FrameLayout
+            android:id="@+id/poundslay"
+            android:layout_weight=".08"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <!--  <EditText
+                  android:id="@+id/pounds"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:text="Pounds"
+                  android:layout_gravity="center_vertical"
+                  android:paddingLeft="10dp"
+                  android:background="#00000000"
+                  android:inputType="numberDecimal"
+                  />-->
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical|right"
+                android:gravity="center_vertical|right"
+                android:paddingRight="5dp">
+
+
+                <TextView
+                    android:id="@+id/poundsym"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="14sp"
+                    android:textColor="#000000"
+                    android:gravity="center_vertical"
+                    android:visibility="visible"
+                    android:paddingRight="2dp"
+                    android:text="£"/>
+
+                <TextView
+                    android:id="@+id/pounds"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Pounds"
+                    android:gravity="center_vertical"
+                    android:background="#00000000"
+                    android:inputType="numberDecimal"
+                    android:textSize="14sp"
+                    />
+
+                <TextView
+                    android:id="@+id/pencesym"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="14sp"
+                    android:textColor="#000000"
+                    android:gravity="center_vertical"
+                    android:visibility="gone"
+                    android:paddingLeft="2dp"
+                    android:text="p" />
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+
+
+        <TextView
+            android:layout_weight=".2"
+            android:id="@+id/howoften"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="howoften"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:visibility="gone"
+            />
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#979797"
+            />
+
+        <FrameLayout
+            android:id="@+id/datelay"
+            android:layout_weight=".08"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Date"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                />
+
+
+
+        </FrameLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#979797"
+            />
+
+        <TextView
+            android:layout_weight=".09"
+            android:id="@+id/comment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Comment"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="5dp"
+            />
+
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#979797"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:layout_weight=".11"
+            android:id="@+id/hintAndTips"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Hint And Tips"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:visibility="gone"
+            />
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"/>
+
+</LinearLayout>

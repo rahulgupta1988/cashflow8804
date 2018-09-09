@@ -1,0 +1,765 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/summerParentLL"
+    android:orientation="vertical"
+    android:visibility="visible">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/black"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:gravity="center_vertical"
+        android:layout_weight="4"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Lowest Point"
+            android:paddingLeft="8dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:id="@+id/worst_lowest_case"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/worstCase"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/red"
+            android:layout_weight="1"
+            android:gravity="center_vertical|right"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:id="@+id/WorLCaseDate"
+            android:gravity="center_horizontal"
+
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:layout_weight="1"
+            android:id="@+id/WoLWarning"
+            android:gravity="center_vertical|left"
+            android:text="1"
+            android:paddingLeft="1dp"
+            android:fontFamily="sans-serif-condensed"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:gravity="center_vertical"
+        android:layout_weight="4"
+        android:id="@+id/summeryLL2"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="First Negative Balance:"
+            android:paddingLeft="8dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/brown"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|right"
+            android:text=""
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/firstWorstCase"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/brown"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/brown"
+            android:layout_weight="1"
+            android:id="@+id/firstDebtDays"
+            android:gravity="center_vertical|left"
+            android:padding="1dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:gravity="center_vertical"
+        android:layout_weight="4"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="End of Year Balance"
+            android:paddingLeft="8dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/darkgreen"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/red"
+            android:layout_weight="1"
+            android:id="@+id/yearBalSummery"
+            android:gravity="center_vertical|right"
+
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:id="@+id/yearBalDate"
+            android:gravity="center_horizontal"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+<!--    // first row
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_weight=".2"
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#901927"
+            />
+        <LinearLayout
+            android:layout_weight=".2"
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="3 month"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#901927"
+            />
+
+        <LinearLayout
+            android:layout_weight=".2"
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="6 month"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#901927"
+            />
+
+        <LinearLayout
+            android:layout_weight=".2"
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="9 month"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#901927"
+            />
+
+        <LinearLayout
+            android:layout_weight=".2"
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="12 month"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#901927"
+            />
+        &lt;!&ndash;
+                <LinearLayout
+                    android:layout_weight=".15"
+                    android:orientation="horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Total"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        />
+
+                </LinearLayout>&ndash;&gt;
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#901927"
+        />
+
+    // second row
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_weight=".2"
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#4C9900">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Income"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="#ffffff"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#901927"
+            />
+        <LinearLayout
+            android:layout_weight=".2"
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/threemonthin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:gravity="center"
+                android:textSize="15sp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#901927"
+            />
+
+        <LinearLayout
+            android:layout_weight=".2"
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/sixmonthin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:gravity="center"
+                android:textSize="15sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#901927"
+            />
+
+        <LinearLayout
+            android:layout_weight=".2"
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/ninemonthin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:gravity="center"
+                android:textSize="15sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#901927"
+            />
+
+        <LinearLayout
+            android:layout_weight=".2"
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/twelvemonthin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:gravity="center"
+                android:textSize="15sp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#901927"
+            />
+        &lt;!&ndash;
+                <LinearLayout
+                    android:layout_weight=".15"
+                    android:orientation="horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        android:id="@+id/totalofincome"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="0"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        />
+
+                </LinearLayout>&ndash;&gt;
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#901927"
+        />
+
+    // third row
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_weight=".2"
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#FF0000">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Expense"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="#ffffff"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#901927"
+            />
+        <LinearLayout
+            android:layout_weight=".2"
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/threemonthout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:gravity="center"
+                android:textSize="15sp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#901927"
+            />
+
+        <LinearLayout
+            android:layout_weight=".2"
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/sixmonthout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:gravity="center"
+                android:textSize="15sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#901927"
+            />
+
+        <LinearLayout
+            android:layout_weight=".2"
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/ninemonthout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:gravity="center"
+                android:textSize="15sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#901927"
+            />
+
+        <LinearLayout
+            android:layout_weight=".2"
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/twelvemonthout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:gravity="center"
+                android:textSize="15sp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#901927"
+            />
+
+        &lt;!&ndash;   <LinearLayout
+               android:layout_weight=".15"
+               android:orientation="horizontal"
+               android:layout_width="0dp"
+               android:layout_height="50dp">
+
+               <TextView
+                   android:id="@+id/totalofexpend"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:text="0"
+                   android:gravity="center"
+                   android:textStyle="bold"
+                   android:textSize="15sp"
+                   />
+
+           </LinearLayout>&ndash;&gt;
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#901927"
+        />
+
+    // fourth row
+
+   <LinearLayout
+         android:orientation="horizontal"
+         android:layout_width="match_parent"
+         android:layout_height="30dp"
+         android:gravity="center"
+         android:background="#96EFD1"
+         android:weightSum="1">
+
+         <LinearLayout
+             android:layout_weight=".2"
+             android:orientation="horizontal"
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:background="#707289">
+
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:text="Balance"
+                 android:gravity="center"
+                 android:textStyle="bold"
+                 android:textColor="#ffffff"
+                 android:textSize="15sp"
+                 />
+         </LinearLayout>
+
+         <LinearLayout
+             android:layout_width="1dp"
+             android:layout_height="match_parent"
+             android:background="#901927"
+             />
+         <LinearLayout
+             android:layout_weight=".2"
+             android:orientation="horizontal"
+             android:layout_width="0dp"
+             android:layout_height="50dp">
+
+             <TextView
+                 android:id="@+id/threemonthinout"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:text="0"
+                 android:gravity="center"
+                 android:textSize="15sp"
+                 android:textStyle="bold"
+                 />
+
+         </LinearLayout>
+         <LinearLayout
+             android:layout_width="1dp"
+             android:layout_height="match_parent"
+             android:background="#901927"
+             />
+
+         <LinearLayout
+             android:layout_weight=".2"
+             android:orientation="horizontal"
+             android:layout_width="0dp"
+             android:layout_height="50dp">
+
+             <TextView
+                 android:id="@+id/sixmonthinout"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:text="0"
+                 android:gravity="center"
+                 android:textSize="15sp"
+                 android:textStyle="bold"
+                 />
+
+         </LinearLayout>
+
+         <LinearLayout
+             android:layout_width="1dp"
+             android:layout_height="match_parent"
+             android:background="#901927"
+             />
+
+         <LinearLayout
+             android:layout_weight=".2"
+             android:orientation="horizontal"
+             android:layout_width="0dp"
+             android:layout_height="50dp">
+
+             <TextView
+                 android:id="@+id/ninemonthinout"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:text="0"
+                 android:gravity="center"
+                 android:textSize="15sp"
+                 android:textStyle="bold"
+                 />
+
+         </LinearLayout>
+
+         <LinearLayout
+             android:layout_width="1dp"
+             android:layout_height="match_parent"
+             android:background="#901927"
+             />
+
+         <LinearLayout
+             android:layout_weight=".2"
+             android:orientation="horizontal"
+             android:layout_width="0dp"
+             android:layout_height="50dp">
+
+             <TextView
+                 android:id="@+id/twelvemonthinout"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:text="0"
+                 android:gravity="center"
+                 android:textSize="15sp"
+                 android:textStyle="bold"
+                 />
+
+         </LinearLayout>
+         <LinearLayout
+             android:layout_width="1dp"
+             android:layout_height="match_parent"
+             android:background="#901927"
+             />
+
+        &lt;!&ndash; <LinearLayout
+             android:layout_weight=".15"
+             android:orientation="horizontal"
+             android:layout_width="0dp"
+             android:layout_height="50dp">
+
+             <TextView
+                 android:id="@+id/totalinout"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:text="0"
+                 android:gravity="center"
+                 android:textStyle="bold"
+                 android:textSize="15sp"
+                 />
+
+         </LinearLayout>&ndash;&gt;
+
+     </LinearLayout>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="1dp"
+         android:background="#901927"
+         />-->
+</LinearLayout>
+
+</LinearLayout>

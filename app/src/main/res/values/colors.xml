@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorNeutral">#ffffff</color>
+    <color name="colorAccentDark">#2952d7</color>
+
+
+    <color name="white">#ffffff</color>
+    <color name="addcommentcol">#424459</color>
+    <color name="la_disable">#b6b6ba</color>
+
+
+    <color name="moneycol">#a68b0c</color>
+    <color name="incomescol">#cc2e2d</color>
+    <color name="basicscol">#2c58e9</color>
+    <color name="movingcol">#e9922c</color>
+    <color name="clothescol">#218426</color>
+    <color name="funcol">#7c21b0</color>
+    <color name="holidayscol">#0c95b2</color>
+    <color name="repaymentscol">#183e60</color>
+    <color name="thisyearcol">#525149</color>
+
+    <color name="viewaddeditemcolor">#0297F1</color>
+    <color name="black">#404040</color>
+    <color name="red">#ff0019</color>
+    <color name="brown">#9f2930</color>
+    <color name="darkgreen">#41a35f</color>
+    <color name="amber">#FFBF00</color>
+
+
+    <!-- <color name="imagecolor">#F27529</color>-->
+
+</resources>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="#ffffff"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/moneyatstartedit"
+            android:layout_weight=".3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="7dp"
+            android:text="What I Owe"
+            android:textSize="16sp"
+            android:paddingLeft="5dp"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:background="#99800b"
+            />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight=".17"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:weightSum="1"
+            android:layout_margin="7dp"
+            android:layout_gravity="center_vertical|right"
+            android:gravity="center_vertical|right"
+            android:paddingRight="10dp"
+            android:background="@drawable/rectangularshap1">
+
+
+            <TextView
+                android:id="@+id/owepoundsym"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:gravity="center_vertical"
+                android:visibility="gone"
+                android:paddingRight="2dp"
+                android:text="£"/>
+            <EditText
+                android:id="@+id/howmuchpoundofwhatiwoe"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:hint="How Much?"
+                android:textSize="14sp"
+                android:textColorHint="#000000"
+                android:textColor="#000000"
+                android:fontFamily="sans-serif-condensed"
+                android:background="#00000000"
+                android:inputType="numberDecimal"
+                />
+
+            <TextView
+                android:id="@+id/owegoalpencesym"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:visibility="gone"
+                android:gravity="center_vertical"
+                android:paddingLeft="2dp"
+                android:text="p"/>
+
+            <LinearLayout
+                android:layout_weight=".01"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="#E86C41"
+                android:visibility="gone"
+                />
+            <TextView
+                android:id="@+id/howmuchpence"
+                android:layout_weight=".495"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:hint="Pence?"
+                android:textSize="14sp"
+                android:paddingRight="5dp"
+                android:textColorHint="#000000"
+                android:textColor="#000000"
+                android:gravity="center_vertical|right"
+                android:fontFamily="sans-serif-condensed"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/startdateofwhatiwoe"
+            android:layout_weight=".15"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/input_3x"
+            android:layout_margin="7dp"
+            android:hint="start date"
+            android:textSize="14sp"
+            android:paddingLeft="5dp"
+            android:textColorHint="#000000"
+            android:textColor="#000000"
+            android:gravity="center_vertical"
+            />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight=".05"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_margin="7dp"
+            android:visibility="gone"
+            >
+            <ImageView
+                android:id="@+id/seldateofwhatiwoe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_datepicker"
+                />
+        </LinearLayout>
+
+        />
+
+        <LinearLayout
+            android:id="@+id/owecomment"
+            android:orientation="horizontal"
+            android:layout_weight=".05"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/edit_3x"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight=".2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_margin="7dp"
+            android:visibility="gone">
+            <Button
+                android:id="@+id/submitofwhatiwoe"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:background="@drawable/buttonstatesel"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+
+                />
+        </LinearLayout>
+</LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/owecommentlay"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="10dp"
+            android:background="#ffffff"
+            android:visibility="gone">
+            <TextView
+                android:id="@+id/owecommenttxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:paddingLeft="10dp"
+                android:textColor="#000000"
+                android:text=""
+                android:fontFamily="sans-serif-condensed"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ebebeb"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

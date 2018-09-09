@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:paddingBottom="20dp"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:id="@+id/prof_header_lay"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:weightSum="1"
+        android:background="#AACAC0">
+
+
+        <LinearLayout
+            android:layout_weight=".1"
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:weightSum="1"
+            android:padding="10dp"
+            android:visibility="visible"
+            >
+            <ImageView
+                android:id="@+id/cancel"
+                android:layout_weight=".9"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/cancel"
+
+
+                />
+        </LinearLayout>
+        <TextView
+            android:layout_weight=".9"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Help"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:textSize="10pt"
+            />
+
+    </LinearLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1"
+            android:padding="20dp">
+
+            <WebView
+                android:id="@+id/help_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></WebView>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

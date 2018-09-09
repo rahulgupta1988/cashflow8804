@@ -1,0 +1,146 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-SemiBold.woff2') format('woff2'),
+        url('../fonts/OpenSans-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Light.woff2') format('woff2'),
+        url('../fonts/OpenSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Regular.woff2') format('woff2'),
+        url('../fonts/OpenSans-Regular.woff') format('woff');
+		
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Bold.woff2') format('woff2'),
+        url('../fonts/OpenSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+
+body {font-family: 'Open Sans'; color:#444;)}
+p {
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+strong { font-weight:700;}
+
+td p { margin-bottom:15px;}
+.mb-10, p.mb-10 { margin-bottom:10px;}
+.mt-10 { margin-top:10px !important;}
+
+
+td { vertical-align:top; padding:6px; line-height:1.5}
+.va-m td { vertical-align:middle;}
+
+.wrapper {width:90%; margin:20px auto; padding:20px; border:1px solid #eaeaea; max-width:660px;}
+.row { margin-bottom:50px;}
+.row h3 {
+  border-bottom: 1px solid #cecfec;
+  color: #343552;
+  font-size: 32px;
+  font-weight: 700;
+  margin: 36px 0;
+  padding-bottom: 9px;
+}
+.img-large { margin: 0 auto 40px auto; text-align:center;}
+h3.bg {
+  background: #948a54 none repeat scroll 0 0;
+  border: medium none;
+  color: #fff;
+  font-size: 24px;
+  padding: 12px 20px;
+}
+h4 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+
+img { max-width:100%; height:auto; min-width:45px;}
+.my-year-table img { min-width:100px;}
+
+
+@media (max-width:767px){
+ .wrapper {
+  border: medium none;
+  margin: 20px auto;
+  max-width: 660px;
+  padding: 16px;
+  width: auto;
+}
+td, p { font-size:14px;}
+.row h3 { font-size:24px;}
+.img-large {
+  margin: 0 auto 16px;
+  text-align: center;
+}
+
+}
+
+
